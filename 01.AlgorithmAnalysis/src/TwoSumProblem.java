@@ -15,7 +15,7 @@ public class TwoSumProblem {
 
     public static int[] twoSumSolution(int[] array, int targetValue){
 
-        //O*(n^2) complexity
+        //O*(n^2) complexity - two loops
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length; j++) { //starting with 1, so we avoid using the same element twice
