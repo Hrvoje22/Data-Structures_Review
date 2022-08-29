@@ -2,7 +2,7 @@ public class BigOSingleLoop {
     public static void main(String[] args) {
 
         int numberOfOperations=0;
-        int n=1000000;// size of  Data
+        int n=1000;// size of  Data
         int m=500;
         long startTime;
         long endTime;
