@@ -14,9 +14,13 @@ public class NumberOfPeopleInTheBus {
 
     }
 
+
+
     public static int countPassengers(ArrayList<int[]> stops){
 
         int numOfPeople = 0;
+
+        // O(n) complexity
 
         for (int i = 0; i < stops.size(); i++) {
             numOfPeople = numOfPeople + stops.get(i)[0] - stops.get(i)[1];
