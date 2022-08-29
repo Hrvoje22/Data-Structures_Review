@@ -17,11 +17,25 @@ public class SetReview {
         set.add(new Student(4,"Mary"));
 
         System.out.println(set);
+        System.out.println(firstRepeatingChar("Java Developer"));
+
 
 
 
     }
     public static Character firstRepeatingChar(String str){
+        //Time complexity of this code is O(n)
+
+        //create a hashset
+        Set<Character> chars = new HashSet<>(); //in here I have Space Complexity of O(n)
+
+        //iterate over the char array and add chars into hashSet
+
+        for (Character ch : str.toCharArray()){
+            if(!chars.add(ch)){ //if it's false
+                return ch;
+            }
+        }
 
        return null;
     }
