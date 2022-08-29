@@ -20,7 +20,7 @@ public class NumberOfPeopleInTheBus {
 
         int numOfPeople = 0;
 
-        // O(n) complexity
+        // O(n) complexity - single loop with size n
 
         for (int i = 0; i < stops.size(); i++) {
             numOfPeople = numOfPeople + stops.get(i)[0] - stops.get(i)[1];
