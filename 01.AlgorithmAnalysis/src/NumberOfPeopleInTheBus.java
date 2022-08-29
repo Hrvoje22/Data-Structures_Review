@@ -15,7 +15,6 @@ public class NumberOfPeopleInTheBus {
     }
 
 
-
     public static int countPassengers(ArrayList<int[]> stops){
 
         int numOfPeople = 0;
