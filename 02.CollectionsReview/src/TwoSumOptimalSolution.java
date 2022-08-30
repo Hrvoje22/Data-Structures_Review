@@ -6,7 +6,7 @@ public class TwoSumOptimalSolution {
 
     public static void main(String[] args) {
 
-        int[] array = new int[]{2,7,9,11};
+        int[] array = new int[]{2,3,9,7,11};
 
         System.out.println(Arrays.toString(twoSumOptimalSolution(array,9)));
 
@@ -23,7 +23,7 @@ public class TwoSumOptimalSolution {
 
         for (int i = 0; i < array.length; i++) {
             int potentialMatch = targetValue-array[i];
-            if(map.containsKey(potentialMatch)) return new int[]{i,map.get(potentialMatch)};
+            if(map.containsKey(potentialMatch)) return new int[]{map.get(potentialMatch),i};
             else map.put(array[i],i);
         }
 
