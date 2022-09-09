@@ -12,6 +12,9 @@ public class SinglyLinkedListApp {
         }
 
         myList.printNode();
+        myList.deleteById(7);
+        myList.printNode();
+
 
 
     }
