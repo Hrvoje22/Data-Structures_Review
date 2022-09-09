@@ -4,6 +4,7 @@ public class Node {
 
     Node next;
 
-
-
+    public Node(int id) {
+        this.id = id;
+    }
 }
