@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class LinkedListDemo {
 
 
@@ -14,12 +16,30 @@ public class LinkedListDemo {
         node3.next=node4;
 
 
-        System.out.println(node1.id);
+        System.out.println("Node1's address is: " + node1 + " Node1's next address is " + node1.next);
+        System.out.println("Node2's address is: " + node2 + " Node2's next address is " + node2.next);
+        System.out.println("Node3's address is: " + node3 + " Node3's next address is " + node3.next);
+        System.out.println("Node4's address is: " + node4 + " Node4's next address is " + node4.next);
         System.out.println(node1.next.id + " Id of the second node");
         System.out.println("Next Address is: " + node1.next);
 
+        System.out.println("--------------------------------------------");
+
+
+        Node current;
+        Node head = node1;
+
+        current=head;
+        while(current !=null){
+            System.out.println("Id of node is: " + current.id);
+            current=current.next;
+        }
+
 
     }
+
+    ArrayList<Node> nodeArrayList = new ArrayList<>();
+
 
 
 }
