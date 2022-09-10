@@ -21,7 +21,7 @@ public class LinkedListDemo {
         System.out.println("Node3's address is: " + node3 + " Node3's next address is " + node3.next);
         System.out.println("Node4's address is: " + node4 + " Node4's next address is " + node4.next);
         System.out.println(node1.next.id + " Id of the second node");
-        System.out.println("Next Address is: " + node1.next);
+        System.out.println("Next Address is: " + node4.next); //null
 
         System.out.println("--------------------------------------------");
 
