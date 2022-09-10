@@ -12,8 +12,9 @@ public class SinglyLinkedListApp {
         }
 
         myList.printNode();
-        myList.deleteById(7);
+        myList.deleteById(9);
         myList.printNode();
+        System.out.println("Index of 0: " + myList.indexOf(0));
 
 
 
