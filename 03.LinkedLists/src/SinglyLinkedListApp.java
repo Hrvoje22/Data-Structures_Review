@@ -16,7 +16,5 @@ public class SinglyLinkedListApp {
         myList.printNode();
         System.out.println("Index of 0: " + myList.indexOf(0));
 
-
-
     }
 }
