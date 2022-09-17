@@ -91,6 +91,14 @@ public class MySinglyLinkedList {
             }
         }
 
+        //ASSIGNMENT 2
+
+        void addFirst(int data){
+
+
+
+        }
+
 
 
 }

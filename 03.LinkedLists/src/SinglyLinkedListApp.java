@@ -15,6 +15,10 @@ public class SinglyLinkedListApp {
         myList.deleteById(9);
         myList.printNode();
         System.out.println("Index of 0: " + myList.indexOf(0));
+        myList.add(4);
+        myList.printNode();
+        myList.addFirst(1);
+        myList.printNode();
 
     }
 }
