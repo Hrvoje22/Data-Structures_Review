@@ -17,8 +17,11 @@ public class SinglyLinkedListApp {
         System.out.println("Index of 0: " + myList.indexOf(0));
         myList.add(4);
         myList.printNode();
-        myList.addFirst(1);
+        myList.addFirst(16);
         myList.printNode();
+
+        System.out.println(myList.getKthItemFromLast(5));
+
 
     }
 }

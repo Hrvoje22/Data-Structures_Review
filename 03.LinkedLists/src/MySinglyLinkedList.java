@@ -25,7 +25,7 @@ public class MySinglyLinkedList {
 
     }
 
-        void deleteById ( int id){
+    void deleteById ( int id){
             // Check if empty
             if (isEmpty()) System.out.println("List is Empty!");
             // assign prev and current with the head
@@ -95,7 +95,42 @@ public class MySinglyLinkedList {
 
         void addFirst(int data){
 
+        // create a new node object from data
 
+            Node node = new Node(data);
+
+        // case 1: list empty
+
+        if(isEmpty()){
+            head = tail = node;
+        }else{ // case 2: list is not empty
+            node.next = head;
+            head=node;
+        }
+
+        //increase size
+        size++;
+
+
+        }
+
+        public int getKthItemFromLast(int k){
+        //create two pointers
+            Node ptr1 = head;
+            Node ptr2 = head;
+
+        //move ptr2 k-1 times
+            for (int i = 0; i < k-1; i++) {
+                ptr2=ptr2.next;
+
+            }
+        //move both pointers until ptr2 hits the last element
+            while(ptr2.next!=null){
+                ptr1=ptr1.next;
+                ptr2=ptr2.next;
+            }
+        //ptr1 is on the kth element from the last
+            return ptr1.id;
 
         }
 
