@@ -47,7 +47,7 @@ public class ExpressionBalanceCheck {
 
         } //end of for
 
-        //return if stack is empty
+        //return if stack is empty - if we have the same amount of matching elements
         return myStack.isEmpty();
 
     }
