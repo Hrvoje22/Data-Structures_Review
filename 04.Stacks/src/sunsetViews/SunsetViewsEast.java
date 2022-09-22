@@ -18,7 +18,7 @@ public class SunsetViewsEast {
             stack.push(i);
         }
 
-        //now I have a stack with teh buildings indices that can see the sunset
+        //now I have a stack with the buildings indices that can see the sunset
 
 
         return new ArrayList<Integer>(stack);
