@@ -12,11 +12,22 @@ public class Solution {
         n1.next=n2;
         n2.next=n3;
         n3.next=n4;
-        n4.next=null;
+        n4.next=n2;
         System.out.println(hasCycle(n1));
     }
     public static boolean hasCycle(ListNode head) {
 
+        //create a hashset
+        HashSet<ListNode> visited = new HashSet<>();
+
+        //set current to head
+        ListNode current = head;
+        while (current != null){
+            if (visited.contains(current)) return true;
+        visited.add(current);
+        current = current.next;
+
+        }
         return false;
     }
 }
