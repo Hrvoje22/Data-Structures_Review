@@ -24,8 +24,8 @@ public class Solution {
         ListNode current = head;
         while (current != null){
             if (visited.contains(current)) return true;
-        visited.add(current);
-        current = current.next;
+                visited.add(current);
+                current = current.next;
 
         }
         return false;
