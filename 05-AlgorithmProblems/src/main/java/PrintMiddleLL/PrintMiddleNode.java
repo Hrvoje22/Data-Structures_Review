@@ -22,8 +22,11 @@ public class PrintMiddleNode {
             b = b.next.next;   //double jump
         }
 
+        //b is located either on tail or before tail
         if(b==sll.tail) System.out.println(a.id); //on tail, odd number of nodes
         else System.out.println(a.id + ", " + a.next.id); // before tail, even number of nodes
+
+        //if we don't have head and tail we can do b.next==null or b.next.next==null;
 
     }
 
