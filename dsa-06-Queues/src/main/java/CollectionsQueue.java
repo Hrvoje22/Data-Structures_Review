@@ -1,5 +1,7 @@
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.TreeMap;
 
 public class CollectionsQueue {
 
@@ -16,6 +18,9 @@ public class CollectionsQueue {
         cq.add(3);
         System.out.println(cq.remove());
         System.out.println(cq.remove());
+
+        HashMap<Integer,String> hmp = new HashMap<>();
+        TreeMap<Integer,String> tmp = new TreeMap<>();
 
 
 
