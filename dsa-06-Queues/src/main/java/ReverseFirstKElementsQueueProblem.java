@@ -40,5 +40,7 @@ public class ReverseFirstKElementsQueueProblem {
         return queue;
     }
 
+    //o(n) space complexity because of the stack
+
 
 }
