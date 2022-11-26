@@ -90,5 +90,22 @@ public class MyTree {
     }
 
 
+    public boolean contains(int value){
+
+        if(root==null) return false;
+        TNode current = root;
+        while(current != null) {
+            if (value < current.value) current = current.leftChild;
+            else if(value > current.value) current = current.rightChild;
+            else return true;
+        }
+
+        return false;
+
+    }
+
+
+
+
 
 }
