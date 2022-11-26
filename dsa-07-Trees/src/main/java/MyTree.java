@@ -99,12 +99,48 @@ public class MyTree {
             else if(value > current.value) current = current.rightChild;
             else return true;
         }
-
         return false;
 
     }
 
 
+    public boolean isLeaf(TNode node){
+        return node.leftChild==null && node.rightChild==null;
+    }
+
+    public void printLeaves(TNode root){
+        if(root==null) return;
+        //perform visit on Root
+        if(isLeaf(root)) System.out.print(root.value + ", ");
+        //Recursively branch left Subtree
+        printLeaves(root.leftChild);
+        //Recursively branch right Subtree
+        printLeaves(root.rightChild);
+        //here we can use any type of traversal
+
+
+
+
+    }
+
+    public int countLeaves(TNode root){
+      if(root==null) return 0;
+      if(isLeaf(root)) return 1;
+      return countLeaves(root.leftChild) + countLeaves(root.rightChild);
+
+    }
+
+    public int findSumOfLeaves(TNode root){
+        if(root==null) return 0;
+        if(isLeaf(root)) return root.value;
+        return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
+    }
+
+    public int height(TNode root){
+        if(root==null) return -1;
+        if(isLeaf(root)) return 0;
+        return 1 + Math.max(height(root.leftChild),height(root.rightChild));
+    }
 
 
 
