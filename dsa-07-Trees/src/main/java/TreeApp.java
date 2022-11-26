@@ -10,5 +10,12 @@ public class TreeApp {
 
         VisualizeTree.printTree(tree.root,null,false);
 
+        System.out.println("Pre Order Traversal: ");
+        tree.preOrderTraversal(tree.root);
+        System.out.println("\nIn Order Traversal: ");
+        tree.inOrderTraversal(tree.root);
+        System.out.println("\nPost Order Traversal: ");
+        tree.postOrderTraversal(tree.root);
+
     }
 }
