@@ -24,6 +24,7 @@ public class MyTree {
                     current.leftChild=newNode;
                     break;
                 }
+                //if leftChild is not null branch into left subtree!
                 current=current.leftChild;
             }
             else{
@@ -32,6 +33,7 @@ public class MyTree {
                     current.rightChild=newNode;
                     break;
                 }
+                //if rightChild is not null branch into right subtree!
                 current=current.rightChild;
             }
         }
