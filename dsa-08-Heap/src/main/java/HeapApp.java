@@ -16,6 +16,16 @@ public class HeapApp {
         heap.printHeap();
         heap.remove();
         heap.printHeap();
+        heap.insert(1);
+        heap.printHeap();
+        heap.insert(47);
+        heap.printHeap();
+        heap.insert(63);
+        heap.printHeap();
+        heap.insert(48);
+        heap.printHeap();
+        heap.insert(49);
+        heap.printHeap();
 
 
 
