@@ -26,5 +26,10 @@ public class TreeApp {
         System.out.println("Sum of Leaf Nodes: " + tree.findSumOfLeaves(tree.root));
         System.out.println("Height of this Tree is : " + tree.height(tree.root));
 
+
+        System.out.println("Sum of Node Depths is: " + tree.calculateNodeDepthsSums());
+        System.out.println("Sum of all node values is: " + tree.calculateNodeSums());
+
+
     }
 }
